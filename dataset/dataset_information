@@ -1,1 +1,40 @@
 
+Ninapro Dataset 5
+
+Link: https://ninapro.hevs.ch/instructions/DB5.html
+
+Subjects
+10 intact subjects.
+Acquisition Setup
+The sEMG data are acquired using two Thalmic Myo Armbands
+The sEMG signals are sampled at a rate of 200 Hz.
+Acquisition Protocol
+The dataset includes 6 repetitions of 52 different movements.
+The subjects are asked to repeat movements which were shown as movies on the screen of a laptop.
+During the acquisition, the subjects were asked to repeat the movements with the right hand.
+Each movement repetition lasted approximatively 5 seconds and was followed by 3 seconds of rest.
+The experiment is divided in three exercises:
+
+Basic movements of the fingers.
+Isometric, isotonic hand configurations and basic wrist movements.
+Grasping and functional movements.
+Dataset variables
+For each exercise, for each subject, the database contains one matlab file with synchronized variables. The variables included in the matlab files are:
+Subject: subject number.
+Sensor: name of the sEMG sensor
+Frequency: sampling frequency of the recorded data in Hertz
+Exercise: exercise number.
+Emg (16 columns): sEMG signal. olumns 1-8 are the electrodes equally spaced around the forearm at the height of the radio humeral joint. Columns 9-16 represent the second Myo, tilted by 22.5 degrees clockwise.
+acc (3 columns): raw signals from the three axis accelerometer of the first Myo, found in the Myo DB.
+Glove (22 columns): uncalibrated signal from the 22 sensors of the cyberglove.
+The cyberglove signal corresponds to raw data from the cyberglove sensors, which are expected to be proportional to the angles at the joints.
+Stimulus (1 column): the movement repeated by the subject, according to the displayed movie.
+Restimulus (1 column): the movement repeated by the subject, but with the duration of the movement label refined a-posteriori in order to better correspond to the real movement.
+Repetition (1 column): repetition of the stimulus.
+Rerepetition (1 column): repetition of restimulus.
+Age: age of the subject;
+Gender: gender, m for male f for female.
+Weight: weight in kilograms.
+Height: height in centimeters.
+Laterality: laterality, r for right-handed, l for left-handed.
+Circumference: circumference of the forearm at the radio-humeral joint height, measured in centimeters.
